@@ -56,7 +56,7 @@ like using CMake.
 - You can join atmost one channel at a time.
 - Sometimes the client pipe application may not output newly received messages. Pressing the
   enter key on the console usually fixes it.
-- When the client is idle for too long, the socket throws a recv error with error code: 10054.
+- When the IRC client is idle for too long, the socket throws a recv error with error code: 10054.
   Refer to Windows Socket error codes for more information.
 - Client pipe application may sometimes abruptly shutdown and WriteFile function in the SampleApp throws an error code: 232.
 - Synchronization issues between sent messages and received responses might occur. (I have done my best to handle several cases)
