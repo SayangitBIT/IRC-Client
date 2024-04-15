@@ -23,6 +23,7 @@ Relevant challenge - https://codingchallenges.fyi/challenges/challenge-irc/
 - Compile WindowsPipeClient.cpp with the same linker flags.
 - Run the SampleApp exe first followed by WindowsPipeClient exe.
 - Wait for IRC server to connect. It will send welcome messages on successful connection.
+- You will require two separate interactive consoles for this. Something like cmd or Powershell works fine.
 
 
 ---
