@@ -136,7 +136,6 @@ void sendThread(HANDLE &namedPipe) {
 
         if (!command.empty() and command[0] != '/' and m_bStop) {
             //writeLock.lock();
-           // pipe<<"Incorrect command format"<<endl;
             writeMsg(namedPipe, "Incorrect command format", dwNoBytesWriteSend);
             //writeLock.unlock();
         } else {
@@ -162,8 +161,7 @@ void sendThread(HANDLE &namedPipe) {
             if (command == "/msg") {
                 std::unique_lock<std::mutex> lock(mymutex);
                 lastCommand = command;
-                sentMessage = nick + ": " + param + "\n";
-                //cout<<param + "dhoka"<<endl;                
+                sentMessage = nick + ": " + param + "\n";               
                 sendData("PRIVMSG "+ joinedChannel + " :" + param + "\r\n");
                 
                 lock.unlock();
