@@ -4,7 +4,7 @@
 Hi all, this is a basic IRC client made for Windows Platform. It allows one to
 connect to any IRC server out there and interact with it. 
 
-I would like to thank John Crickett for his amazing website
+I would like to thank John Crickett for his amazing website.
 
 https://codingchallenges.fyi/
 
@@ -50,3 +50,14 @@ like using CMake.
 /msg - Send a message using this command on a joined channel.
 
 /quit - Exit the client.
+
+---
+### Limitations:
+- You can join atmost one channel at a time.
+- Sometimes the client pipe application may not output newly received messages. Pressing the
+  enter key on the console usually fixes it.
+- When the client is idle for too long, the socket throws a recv error with error code: 10054.
+  Refer to Windows Socket error codes for more information.
+- Client pipe application may sometimes abruptly shutdown and WriteFile function in the SampleApp throws an error code: 232.
+- Synchronization issues between sent messages and received responses might occur. (I have done my best to handle several cases)
+- Random freezes of either exes might occur as a possibility.
