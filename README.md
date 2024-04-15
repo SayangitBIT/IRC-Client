@@ -39,3 +39,9 @@ Obviously for something larger one may have to look for alternative solutions
 like using CMake.
 
 
+### Commands:
+/join #channelName - Allows you to join a channel which goes by the name "channelName".
+/part - Allows you to leave a joined channel. 
+/nick newNick - Change your current nickname to "newNick".
+/msg - Send a message using this command on a joined channel.
+/quit - Exit the client.
