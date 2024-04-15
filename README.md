@@ -28,4 +28,14 @@ Relevant challenge - https://codingchallenges.fyi/challenges/challenge-irc/
 ---
 
 ### Note:
+I use VScode as my IDE and C/C++ Runner as the extension. 
+
+https://marketplace.visualstudio.com/items?itemName=franneck94.c-cpp-runner
+
+https://github.com/franneck94/Vscode-C-Cpp-Runner/tree/main
+
+This extension makes compiling C++ applications less tedious on VScode. 
+Obviously for something larger one may have to look for alternative solutions 
+like using CMake.
+
 
