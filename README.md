@@ -60,4 +60,20 @@ like using CMake.
   Refer to Windows Socket error codes for more information.
 - Client pipe application may sometimes abruptly shutdown and WriteFile function in the SampleApp throws an error code: 232.
 - Synchronization issues between sent messages and received responses might occur. (I have done my best to handle several cases)
-- Random freezes of either exes might occur as a possibility.
+- Random freezes of either exe's might occur as a possibility.
+
+---
+### Concluding Remarks
+Thank you for visiting my IRC Client. When I started off with the project, I thought it would be fairly 
+simple to develop. The steps provided in the challenge link seemed simple and I thought of this project 
+merely as a parsing server messages applicaton. I was very wrong (lol). As I kept testing more and more
+I came across more issues and needless to say I had to wrack my brains to solve them. It was a great learning
+experience for me.
+
+I want to sign off by saying that this is a v1.0 of the final thing I want to make. It's pretty amateurish
+from any experienced developer's point of view, perhaps even very untidy in terms of code styling and several issues in general.
+If you would like to provide me feedback on improvement please message me at
+
+https://www.linkedin.com/in/sayan-maiti-a500271bb/.
+
+Thank you visitor!
