@@ -59,6 +59,8 @@ like using CMake.
 - When the IRC client is idle for too long, the socket throws a recv error with error code: 10054.
   Refer to Windows Socket error codes for more information.
 - Client pipe application may sometimes abruptly shutdown and WriteFile function in the SampleApp throws an error code: 232.
+- IRC Client protocol lists huge number of error responses for commands and several of them are not implemented. So it's possible
+  that such a response is received and it would cause unpredictable behaviour in the client.
 - Synchronization issues between sent messages and received responses might occur. (I have done my best to handle several cases)
 - Random freezes of either exe's might occur as a possibility.
 
@@ -66,7 +68,7 @@ like using CMake.
 ### Concluding Remarks
 Thank you for visiting my IRC Client. When I started off with the project, I thought it would be fairly 
 simple to develop. The steps provided in the challenge link seemed simple and I thought of this project 
-merely as a parsing server messages applicaton. I was very wrong (lol). As I kept testing more and more
+merely as a parsing server messages application. I was very wrong (lol). As I kept testing more and more
 I came across more issues and needless to say I had to wrack my brains to solve them. It was a great learning
 experience for me.
 
