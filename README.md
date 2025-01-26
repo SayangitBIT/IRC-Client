@@ -1,6 +1,8 @@
 # IRC-Client
 
 ### Introduction:
+IRC (Internet Relay Chat) is a text-based chat system for instant messaging. IRC is designed for group communication in discussion forums, called channels.
+
 Hi all, this is a basic IRC client made for Windows Platform. It allows one to
 connect to any IRC server out there and interact with it. 
 
